@@ -1,0 +1,423 @@
+/* Acá van los imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+/* Acá van las selecciones */
+a {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    border-right: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+header {
+    grid-area: header;
+}
+
+hr {
+    color: white;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(323deg, rgba(2,0,36,1) 0%, rgba(115,115,131,1) 40%, rgba(194,201,201,1) 100%);
+}
+
+div ul {
+    align-self: center;
+    text-align: center;
+}
+
+/* div ul li {
+    display: inline;
+    margin-right: 10px;
+} */
+
+div ul li a{
+    color: white;
+}
+
+form {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+/* Acá van las clases */
+
+.anim1 {
+ animation: anim1;
+ animation-duration: 5s;
+ animation-iteration-count: 4;   
+}
+
+.anim2 {
+    animation: anim2;
+    animation-duration: 7s;
+    animation-iteration-count: 4;   
+   }
+
+.anim3 {
+ animation: anim3;
+ animation-duration: 10s;
+ animation-iteration-count: 4;   
+}
+
+.article-1 {
+    grid-area: article-1;
+}
+
+.article-2 {
+    grid-area: article-2;
+    padding: 20px;
+}
+
+.article-3 {
+    grid-area: article-3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.black {
+    color: black;
+}
+
+.black-bordered {
+    padding: 5px 1px;
+    border: solid;
+    border-color: black;
+    border-radius: 2%;
+    border-width: 3px;
+}
+
+.big-text {
+    font-size: 22px;
+}
+
+.btc-anim {
+    grid-area: "btc-anim";
+}
+
+.btc-chart {
+    grid-area: "btc-chart";
+    background-color: black;
+}
+.container {
+    /* Este código es para centrar las clases */
+    display: flex;
+    justify-content: center;
+}
+.centered-menu {
+    border: solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-special {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.grid-display-tipos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas: 
+    "text-1"
+    "images-1"
+    "images-2";
+    grid-row-gap: 5px;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "article-1 article-2"
+    "article-1 article-2"
+    "article-3 article-3";
+    grid-column-gap: 5px;
+}
+
+.images-1 {
+grid-area: images-1;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.images-2 {
+    grid-area: images-2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image-background {
+    background-image: url('../images/background2.jpg')
+}
+
+.inline {
+    display: inline;
+}
+
+.justified {
+    text-align: justify;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.low-margin {
+    margin: 5px 0px;
+}
+
+.main-header {
+    background-color: rgb(64, 33, 173);
+}
+
+.not-underlined {
+    text-decoration: none;
+}
+
+.rotada {
+    transform: rotate(1deg);
+}
+
+.text-1 {
+    grid-area: text-1;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.side-margined {
+    margin: 0 5px;
+}
+
+.selectable-box {
+    background-color: rgb(29, 85, 190);
+    border-radius: 5px;
+    border: solid;
+    margin: 10px;
+    display: inline;
+    border-color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.white {
+    color: white;
+}
+
+
+
+/* Acá van los id */
+#animated-h3 {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: 2;
+}
+
+#bold-footer-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#grilla {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 100px 1fr 100px ;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header" 
+        "main" 
+        "footer";
+}
+
+#grilla-dos {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    grid-template-areas: "parte1 parte2";
+}
+
+#main-title {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+}
+
+#special-ordered-list {
+    list-style-type: upper-roman;
+}
+
+#underlined {
+    text-decoration: underline;
+}
+
+/* Acá van los media queries */
+
+/* Media Queries para Mobile */
+@media only screen and (min-width: 0px) and (max-width: 500px){
+    /* Media Query para el Index */
+	.gridContainerIndex{
+		display: grid; 
+        grid-template-areas:
+		"header" 
+        "main" 
+		"footer";
+		grid-template-columns: 100%;
+        /* Aumentamos el tamaño del header para acomodar la barra de navegación flex en mobile */
+		grid-template-rows: 400px auto 100px;
+	}
+    /* Media Query para Tipos de Monedas */
+    .gridContainerTipos{
+        display: grid; 
+        grid-template-areas:
+        "header" 
+        "main" 
+        "footer";
+        grid-template-columns: 100%;
+        /* Aumentamos el tamaño del header para acomodar la barra de navegación flex en mobile */
+        grid-template-rows: 400px auto 100px; 
+    }
+}
+
+/* Media Queries para Desktop */
+@media only screen and (min-width: 500px){
+    /* Media Query para el Index */
+	.gridContainerIndex{
+		display: grid;
+        grid-template-areas:
+		    "header"	
+            "main"
+            "footer"; 
+        grid-template-columns: 1;
+        grid-template-rows: auto auto 100px; 
+        }
+    /* Media Query para Tipos de Monedas */
+    .gridContainerTipos{
+        display: grid; 
+        grid-template-areas:        
+            "header" 
+            "main" 
+            "footer";        
+        grid-template-columns: 1;
+        grid-template-rows: auto auto 100px;
+    }
+    }
+
+    /* Acá van las animaciones */
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes anim1 {
+        0% {
+            background-color: lightgreen;
+        }
+
+        50% {
+            background-color: green;
+        }
+
+        75% {
+            background-color: red;
+        }
+
+        100% {
+            background-color: lightcoral;
+        }
+    }
+
+    @keyframes anim2 {
+        0% {
+            background-color: green;
+        }
+
+        50% {
+            background-color: red;
+        }
+
+        75% {
+            background-color: lavender;
+        }
+
+        100% {
+            background-color: salmon;
+        }
+    }
+
+    @keyframes anim3 {
+        0% {
+            background-color: green;
+        }
+
+        50% {
+            background-color: lightgreen;
+        }
+
+        100% {
+            background-color: red;
+        }
+    }

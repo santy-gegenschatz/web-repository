@@ -1,0 +1,73 @@
+/* Importamos las librerías */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Acá van los selectores */
+* {
+    margin: 10;    
+}
+
+body {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Acá van las clases */
+
+.btn-black {
+    background-color: black;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-family: Lato, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn-horizontal {
+    background-color: rgb(130, 139, 148);
+    border-radius: 10px;
+    border: 0;
+    color: black;
+    font-family: Lato, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn-white {
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+    color: rgb(25, 28, 31);
+    font-family: Lato, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.container {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.superior {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+}
+
+.inferior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
